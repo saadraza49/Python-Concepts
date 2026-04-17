@@ -24,7 +24,7 @@ def grade(marks):
     elif marks >= 50:
         return "D"
     else:
-        return "F (Fail)"
+        return "F"
 
 print("\nGrading System:")
 for m in [95, 82, 74, 63, 55, 40]:

@@ -3,7 +3,7 @@ student = {"name": "Fatima", "age": 19, "grade": "A"}
 print(f"Student dict: {student}")
 
 # Access values
-print(f"\nAccess  → Name: {student['name']}, Age: {student['age']}, Grade: {student['grade']}")
+print(f"\nName: {student['name']}, Age: {student['age']}, Grade: {student['grade']}")
 
 # Update values
 student["age"] = 20

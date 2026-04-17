@@ -1,16 +1,12 @@
 class Student:
-    """Student class demonstrating OOP basics."""
-
     def __init__(self, name, age, grade):
         self.__name  = name   # Encapsulation (private)
         self.__age   = age
         self.__grade = grade
-
     # Getters
     def get_name(self):  return self.__name
     def get_age(self):   return self.__age
     def get_grade(self): return self.__grade
-
     # Setter
     def set_grade(self, grade):
         self.__grade = grade
@@ -18,10 +14,7 @@ class Student:
     def display_info(self):
         print(f"  Student → Name: {self.__name}, Age: {self.__age}, Grade: {self.__grade}")
 
-
-class Teacher(Student):
-    """Teacher class inheriting Student."""
-
+class Teacher(Student):     # Inheritance
     def __init__(self, name, age, grade, subject):
         super().__init__(name, age, grade)
         self.__subject = subject
@@ -34,10 +27,9 @@ class Teacher(Student):
         print(f"  {self.get_name()} is teaching {self.__subject}.")
 
 
-# Create objects
-s1 = Student("Ayesha", 18, "A")
-s2 = Student("Bilal",  20, "B")
-
+# objects
+s1 = Student("Zaki", 18, "A")
+s2 = Student("Laiqa",  20, "B")
 print("Student Objects:")
 s1.display_info()
 s2.display_info()

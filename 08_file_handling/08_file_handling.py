@@ -2,9 +2,9 @@ FILE_NAME = "students_data.txt"
 
 # Write to file
 with open(FILE_NAME, "w") as f:
-    f.write("=== Student Records ===\n")
-    f.write("Name: Ali, Age: 20, Grade: A\n")
-    f.write("Name: Sara, Age: 19, Grade: A+\n")
+    f.write("--- Student Records ---\n")
+    f.write("Name: Saad, Age: 19, Grade: A\n")
+    f.write("Name: Abdullah, Age: 19, Grade: A+\n")
 print(f"File '{FILE_NAME}' created and written.")
 
 # Read file
